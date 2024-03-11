@@ -1,0 +1,16 @@
+
+  {data.Events.event.map((event, index) => (
+    <Box padding="40px 40px 40px 40px" lg-padding="45px 30px" md-padding="45px 45px" background="#FFFFFF" border-radius="24px" justify-content="flex-start" flex-direction="column" display="flex">
+      <Box key={index} margin="0px 0px 24px 0px">
+        <Text margin="0px 0px 16px 0px" color="--darkL2" font="--lead" lg-text-align="left">
+          {event.time}
+        </Text>
+        <Text margin="0px 0px 14px 0px" color="--darkL2" font="--headline3" lg-text-align="left">
+          {event.title}
+        </Text>
+        <Text margin="0px 0px 46px 0px" color="--greyD3" font="--base" lg-text-align="left" flex="1 0 auto">
+          {event.description}
+        </Text>
+      </Box>
+    </Box>
+  ))}
